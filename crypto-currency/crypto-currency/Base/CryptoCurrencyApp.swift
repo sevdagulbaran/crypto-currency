@@ -8,10 +8,10 @@
 import SwiftUI
 
 @main
-struct crypto_currencyApp: App {
+struct CryptoCurrencyApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
         }
     }
 }

@@ -7,18 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		52AA0B2B293686C700736C23 /* crypto_currencyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AA0B2A293686C700736C23 /* crypto_currencyApp.swift */; };
-		52AA0B2D293686C700736C23 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AA0B2C293686C700736C23 /* ContentView.swift */; };
+		52AA0B2B293686C700736C23 /* CryptoCurrencyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AA0B2A293686C700736C23 /* CryptoCurrencyApp.swift */; };
 		52AA0B2F293686C900736C23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52AA0B2E293686C900736C23 /* Assets.xcassets */; };
 		52AA0B32293686C900736C23 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52AA0B31293686C900736C23 /* Preview Assets.xcassets */; };
+		52AA0B4229368AB800736C23 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AA0B4129368AB800736C23 /* HomeView.swift */; };
+		52AA0B4429368F0C00736C23 /* TopMoversView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AA0B4329368F0B00736C23 /* TopMoversView.swift */; };
+		52AA0B4629368F4800736C23 /* TopMoversItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AA0B4529368F4800736C23 /* TopMoversItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		52AA0B27293686C700736C23 /* crypto-currency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "crypto-currency.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		52AA0B2A293686C700736C23 /* crypto_currencyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = crypto_currencyApp.swift; sourceTree = "<group>"; };
-		52AA0B2C293686C700736C23 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		52AA0B2A293686C700736C23 /* CryptoCurrencyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCurrencyApp.swift; sourceTree = "<group>"; };
 		52AA0B2E293686C900736C23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52AA0B31293686C900736C23 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		52AA0B4129368AB800736C23 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		52AA0B4329368F0B00736C23 /* TopMoversView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoversView.swift; sourceTree = "<group>"; };
+		52AA0B4529368F4800736C23 /* TopMoversItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoversItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +55,12 @@
 		52AA0B29293686C700736C23 /* crypto-currency */ = {
 			isa = PBXGroup;
 			children = (
-				52AA0B2A293686C700736C23 /* crypto_currencyApp.swift */,
-				52AA0B2C293686C700736C23 /* ContentView.swift */,
-				52AA0B2E293686C900736C23 /* Assets.xcassets */,
+				52AA0B3D29368A3800736C23 /* Resources */,
+				52AA0B3C29368A0200736C23 /* Base */,
+				52AA0B3B293689FA00736C23 /* Modules */,
+				52AA0B3A293689F000736C23 /* Models */,
+				52AA0B39293689E400736C23 /* Extensions */,
+				52AA0B38293689D400736C23 /* Utils */,
 				52AA0B30293686C900736C23 /* Preview Content */,
 			);
 			path = "crypto-currency";
@@ -65,6 +72,77 @@
 				52AA0B31293686C900736C23 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		52AA0B38293689D400736C23 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		52AA0B39293689E400736C23 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		52AA0B3A293689F000736C23 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		52AA0B3B293689FA00736C23 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				52AA0B3E29368A4900736C23 /* Home */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		52AA0B3C29368A0200736C23 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				52AA0B2A293686C700736C23 /* CryptoCurrencyApp.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		52AA0B3D29368A3800736C23 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				52AA0B2E293686C900736C23 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		52AA0B3E29368A4900736C23 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				52AA0B4029368AA300736C23 /* ViewModel */,
+				52AA0B3F29368A9D00736C23 /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		52AA0B3F29368A9D00736C23 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				52AA0B4129368AB800736C23 /* HomeView.swift */,
+				52AA0B4329368F0B00736C23 /* TopMoversView.swift */,
+				52AA0B4529368F4800736C23 /* TopMoversItemView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		52AA0B4029368AA300736C23 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +215,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52AA0B2D293686C700736C23 /* ContentView.swift in Sources */,
-				52AA0B2B293686C700736C23 /* crypto_currencyApp.swift in Sources */,
+				52AA0B4629368F4800736C23 /* TopMoversItemView.swift in Sources */,
+				52AA0B4229368AB800736C23 /* HomeView.swift in Sources */,
+				52AA0B4429368F0C00736C23 /* TopMoversView.swift in Sources */,
+				52AA0B2B293686C700736C23 /* CryptoCurrencyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
