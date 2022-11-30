@@ -12,9 +12,13 @@ struct HomeView: View {
         NavigationView {
             ScrollView(.vertical, showsIndicators: false) {
                 //top movers view
-                TopMoversItemView()
+                TopMoversView()
+                
+                Divider()
                 //all coins view
-            }.navigationTitle("Live Prices")
+                AllCoinsView()
+            }
+            .navigationTitle("Live Prices")
         }
     }
 }
