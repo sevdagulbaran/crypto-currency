@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct TopMoverCellView: View {
+    let coin: Coin
+    
     var body: some View {
         VStack(alignment: .leading) {
             //image
@@ -18,7 +20,7 @@ struct TopMoverCellView: View {
                 .padding(.bottom,6)
             //coin info
             HStack(spacing: 2) {
-                Text("BTC")
+                Text(coin.symbol.uppercased())
                     .font(.caption)
                     .fontWeight(.bold)
                 
@@ -38,8 +40,4 @@ struct TopMoverCellView: View {
     }
 }
 
-struct TopMoversItem_Previews: PreviewProvider {
-    static var previews: some View {
-        TopMoverCellView()
-    }
-}
+

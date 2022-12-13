@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		525D8F46293814BF001643A5 /* AllCoinsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525D8F45293814BF001643A5 /* AllCoinsView.swift */; };
 		525D8F4829381503001643A5 /* CoinCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525D8F4729381503001643A5 /* CoinCellView.swift */; };
+		526D802C293D42D6006E7797 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526D802B293D42D6006E7797 /* HomeViewModel.swift */; };
+		526D802E293D446C006E7797 /* ServiceConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526D802D293D446C006E7797 /* ServiceConstants.swift */; };
+		526D8030293D4B7E006E7797 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526D802F293D4B7E006E7797 /* Coin.swift */; };
 		52AA0B2B293686C700736C23 /* CryptoCurrencyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AA0B2A293686C700736C23 /* CryptoCurrencyApp.swift */; };
 		52AA0B2F293686C900736C23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52AA0B2E293686C900736C23 /* Assets.xcassets */; };
 		52AA0B32293686C900736C23 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52AA0B31293686C900736C23 /* Preview Assets.xcassets */; };
@@ -20,6 +23,9 @@
 /* Begin PBXFileReference section */
 		525D8F45293814BF001643A5 /* AllCoinsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCoinsView.swift; sourceTree = "<group>"; };
 		525D8F4729381503001643A5 /* CoinCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinCellView.swift; sourceTree = "<group>"; };
+		526D802B293D42D6006E7797 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		526D802D293D446C006E7797 /* ServiceConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceConstants.swift; sourceTree = "<group>"; };
+		526D802F293D4B7E006E7797 /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
 		52AA0B27293686C700736C23 /* crypto-currency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "crypto-currency.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		52AA0B2A293686C700736C23 /* CryptoCurrencyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCurrencyApp.swift; sourceTree = "<group>"; };
 		52AA0B2E293686C900736C23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -81,6 +87,7 @@
 		52AA0B38293689D400736C23 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				526D802D293D446C006E7797 /* ServiceConstants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -95,6 +102,7 @@
 		52AA0B3A293689F000736C23 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				526D802F293D4B7E006E7797 /* Coin.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -147,6 +155,7 @@
 		52AA0B4029368AA300736C23 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				526D802B293D42D6006E7797 /* HomeViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -221,12 +230,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				526D8030293D4B7E006E7797 /* Coin.swift in Sources */,
 				52AA0B4629368F4800736C23 /* TopMoverCellView.swift in Sources */,
 				52AA0B4229368AB800736C23 /* HomeView.swift in Sources */,
+				526D802C293D42D6006E7797 /* HomeViewModel.swift in Sources */,
 				525D8F46293814BF001643A5 /* AllCoinsView.swift in Sources */,
 				52AA0B4429368F0C00736C23 /* TopMoversView.swift in Sources */,
 				52AA0B2B293686C700736C23 /* CryptoCurrencyApp.swift in Sources */,
 				525D8F4829381503001643A5 /* CoinCellView.swift in Sources */,
+				526D802E293D446C006E7797 /* ServiceConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
